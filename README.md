@@ -52,6 +52,7 @@ where the components are defined as follows:
 -   **Error term**: $\tilde{\varepsilon} \sim N(0, \sigma_\varepsilon^2)$.
 -   **Recurring bias**: $\tilde{g}_R \sim N(\mu_R, \sigma_R^2)$.
 -   **Conditional conservatism shock**: $\tilde{g}_S$ follows a mixture distribution:
+
 $$
 \tilde{g}_S =
 \begin{cases}
@@ -89,11 +90,13 @@ The model's frictions stem from the asymmetry between the manager's private info
 
 **Manager**: $\mathcal{I}_M = \{\theta, \tilde{g}_R, \tilde{g}_S\}$.
 
-External agents (creditors, investors, regulators) observe only public disclosures:
+**External agents** (creditors, investors, regulators) observe only public disclosures:
 
 $$
 \Omega = \{y_G, \mathcal{A}\}
 $$
+
+Public knowledge: all distributional parameters and functional parameters.
 
 As rational Bayesian updaters, they combine $\Omega$ with prior and belief to form posteriors (e.g. $\widehat\sigma^2_{Creditor}$).
 
