@@ -16,7 +16,7 @@ The credibility of this dual signaling is sustained by two mechanisms: a regulat
 The model yields a sorting equilibrium where firms partition into three reporting regimes based on asset intensity and leverage: Silence, Safe Harbor Pooling, and a separating equilibrium of Structural Decoupling. I show that for high-intangibility firms with low-to-moderate leverage, this dual-reporting system is the WACC-minimizing outcome, outperforming both a strict GAAP-Only mandate and a counterfactual fair value regime with only Non-GAAP reporting.
 My analysis provides a structural explanation for why dual reporting emerges *endogenously* in modern capital markets and why regulatory attempts to suppress Non-GAAP reporting may be welfare-reducing for high-growth firms.
 
-# Section 2 not included.
+(Section 2 not included.)
 
 # 3. The Model
 
@@ -36,7 +36,8 @@ $$
 \tilde{I}_t = \tilde{\theta} + \tilde{\nu}
 $$
 
-where $\tilde{\theta} \sim N(\mu_\theta, \sigma_\theta^2)$ and $\tilde{\nu} \sim N(0, \sigma_\nu^2)$. The total asset intensity is $\sigma_I^2 = \sigma_\theta^2 + \sigma_\nu^2$.
+where $\tilde{\theta} \sim N(\mu_\theta, \sigma_\theta^2)$ and $\tilde{\nu} \sim N(0, \sigma_\nu^2)$. 
+The total intangible-asset intensity is $\sigma_I^2 = \sigma_\theta^2 + \sigma_\nu^2$.
 
 #### 3.1.1. GAAP Reporting Signal
 
