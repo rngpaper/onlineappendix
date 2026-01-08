@@ -21,6 +21,17 @@ This study analytically models the divergence between GAAP and Non-GAAP earnings
 - Policy efforts to force convergence would destroy this efficient sorting mechanism. My analysis provides a structural explanation for why dual reporting emerges endogenously and why regulatory attempts to suppress non-GAAP reporting are most value-destroying for high-growth, intangible-intensive firms.
 
 
+## Formal Verification
+
+The mathematical results in this paper have been formally verified using the [Lean 4](https://leanprover.github.io/) proof assistant. Complete formal proofs are available in the `RNG_Lean4_Proof/` directory:
+
+- **Section 3**: [`RNG_Section3_v1.lean`](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/RNG_Section3_v1.lean) — GAAP and Non-GAAP Earnings (Propositions 1-2, Lemmas 3.1-3.2, Corollaries 1 and B.1)
+- **Section 4**: [`RNG_Section4_v1.lean`](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/RNG_Section4_v1.lean) — Market Equilibrium with Debt Financing (Propositions 3-5, Lemmas 4.1-4.2, Corollaries 3-4)
+- **Section 5**: [`RNG_Section5_v1.lean`](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/RNG_Section5_v1.lean) — Policy and Standard Setting (Proposition 6, Lemma A.7, Investment Efficiency, Welfare Analysis)
+
+All theorems, lemmas, and corollaries stated in this document are verified from first principles using Lean 4's type system and mathematical libraries.
+
+
 ## 1.1. The Theoretical Framework
 
 **The Two Masters Problem**
