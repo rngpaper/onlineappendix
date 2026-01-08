@@ -14,6 +14,8 @@ The mathematical results in this paper have been formally verified using the [Le
 
 All theorems, lemmas, and corollaries stated in this document are verified from first principles using Lean 4's type system and mathematical libraries.
 
+An HOWTO guide is available at [https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/README.md](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/README.md)
+
 
 # 1. Introduction
 
