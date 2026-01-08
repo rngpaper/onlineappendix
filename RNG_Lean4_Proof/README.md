@@ -1,3 +1,5 @@
+## HOWTO RUN THE PROOF WITH LEAN4
+
 ### 1. Clone the GitHub Repo
 ```bash
 git clone https://github.com/rngpaper/onlineappendix.git
