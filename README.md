@@ -1,8 +1,6 @@
-# Condensed Version
+# Online Appendix for the Paper "The Role of Non-GAAP Earnings"
 
-> Technical Summary for "The Role of Non-GAAP Earnings"
-
-This document provides a condensed, math-focused summary of the paper's analytical framework. Section 3 analyzes Non-GAAP disclosure in an equity-only setting. Section 4 introduces debt financing and characterizes the equilibrium with creditor discipline.
+This [Online Appendix](https://github.com/rngpaper/onlineappendix) provides a condensed, math-focused summary of the paper's analytical framework. Section 3 analyzes Non-GAAP disclosure in an equity-only setting. Section 4 introduces debt financing and characterizes the equilibrium with creditor discipline.
 
 ## Formal Verification
 
@@ -16,6 +14,7 @@ All theorems, lemmas, and corollaries stated in this document are verified from 
 
 An HOWTO guide is available at [https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/README.md](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/README.md)
 
+## Technical Summary for the Paper "The Role of Non-GAAP Earnings"
 
 # 1. Introduction
 
