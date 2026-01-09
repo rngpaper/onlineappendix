@@ -34,6 +34,7 @@ You can now check the proofs individually:
 lake lean RNG_Lean4_Proof/RNG_Section3_v1.lean
 ```
 
+
 **Section 4:**
 ```bash
 lake lean RNG_Lean4_Proof/RNG_Section4_v1.lean
@@ -44,3 +45,5 @@ lake lean RNG_Lean4_Proof/RNG_Section4_v1.lean
 lake lean RNG_Lean4_Proof/RNG_Section5_v1.lean
 ```
 
+### 4. Output
+The output will look like [this](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/terminal_output.pdf)
