@@ -33,8 +33,6 @@ This study analytically models the divergence between GAAP and Non-GAAP earnings
 - Policy efforts to force convergence would destroy this efficient sorting mechanism. My analysis provides a structural explanation for why dual reporting emerges endogenously and why regulatory attempts to suppress non-GAAP reporting are most value-destroying for high-growth, intangible-intensive firms.
 
 
-
-
 ## 1.1. The Theoretical Framework
 
 **The Two Masters Problem**
@@ -316,27 +314,30 @@ r_L(\Omega) = \frac{L(\Omega) - D_0}{D_0} = \frac{\mathscr{P}_{def}(\Omega)}{D_0
 \qquad (4.3)
 $$
 
-### Creditor's Volatility Assessment
+### Creditor Discipline: From Volatility Assessment to Cost of Debt
 
-**Lemma 4.1 (Creditor Volatility Assessment)**
+Section 4 establishes the disciplining mechanism through two complementary results:
 
-Let $\Sigma_D(\Omega) \equiv \text{Var}(\tilde{e} \mid \Omega)$ denote the creditor's posterior variance. This variance is non-decreasing and convex in the magnitude of the Non-GAAP adjustment:
+**Lemma B.3 (Creditor Volatility Assessment)** *(Stated and proved in Appendix B)*
+
+The creditor's posterior variance $\Sigma_D(\Omega) \equiv \text{Var}(\tilde{e} \mid \Omega)$ is non-decreasing and convex in the magnitude of the Non-GAAP adjustment:
 
 $$
 \frac{\partial \Sigma_D}{\partial \mathcal{A}} \geq 0 \quad \text{and} \quad \frac{\partial^2 \Sigma_D}{\partial \mathcal{A}^2} \geq 0
-\qquad (4.4)
 $$
 
-**Lemma 4.2 (The Convex Cost of Debt)**
+This mathematical result captures "fat tails" skepticism: aggressive adjustments (positive or negative) signal heightened tail risk, prompting creditors to widen their distribution of possible outcomes.
 
-The equilibrium cost of debt $r_L(\mathcal{A})$ is increasing and convex in the magnitude of the Non-GAAP adjustment:
+**Lemma 4.1 (The Convex Cost of Debt)**
+
+Building on Lemma B.3, the equilibrium cost of debt $r_L(\mathcal{A})$ is increasing and convex in the magnitude of the Non-GAAP adjustment:
 
 $$
 \frac{\partial r_L}{\partial \mathcal{A}} > 0 \quad \text{and} \quad \frac{\partial^2 r_L}{\partial \mathcal{A}^2} > 0
 \qquad (4.5)
 $$
 
-This convexity creates an endogenous "soft constraint" on reporting, substituting for regulatory penalties.
+**Economic interpretation:** The convexity arises from three sources: (1) yield function convexity, (2) option value convexity in volatility (Vomma), and (3) creditor skepticism (Lemma B.3). This creates an endogenous "soft constraint" on reporting, substituting for regulatory penalties—managers face a quadratic cost through the debt channel that curbs extreme misreporting.
 
 ## 4.2. Equilibrium with Creditor Discipline
 
@@ -351,16 +352,10 @@ $$
 
 The first-order condition is:
 
-$$ 
-\phi_1 (1 - r_L^{\prime}(  \mathcal{A}^{*} ) D_0 ) + 
 $$
-
+\phi_1 (1 - r_L'(\mathcal{A}^*) D_0) + \phi_2 - \psi_P (\mathcal{A}^* - \hat{g}_M) = 0
+\qquad (4.7)
 $$
-\phi_2 - \psi_P ( \mathcal{A}^{*} - \hat{g}_M ) = 0
-$$
-
-(4.7)
-
 
 The term $r_L'(\mathcal{A}^*) D_0$ represents the **marginal real cost** of reporting—as the manager inflates the signal, the yield on debt rises, transferring value from equity to debt.
 
@@ -491,12 +486,10 @@ Beyond pricing, disclosure affects the real investment level $I_0$.
 
 **The Underinvestment Problem:**
 Under GAAP-only reporting, gain-state firms are pooled. The market prices them at the average:
-
 $$
 P^{GAAP} = E[\tilde{e} \mid y_G] - \lambda \Sigma_{ND}
 \qquad (5.2)
 $$
-
 This low valuation creates an adverse selection wedge, causing high-productivity firms ($\text{high } \tilde{\theta}$) to underinvest: $I_0^{GAAP} < I_0^{FB}$.
 
 **Restoring Efficiency:**
@@ -504,12 +497,10 @@ Non-GAAP disclosure allows separation ($P^{Dual} > P^{GAAP}$), reducing the cost
 
 **Welfare Decomposition:**
 The welfare impact of a ban on Non-GAAP disclosure is:
-
 $$
 \text{Net Effect} = \underbrace{\text{Elimination of Bias } B^*}_{\text{Benefit}} - \underbrace{\text{Destruction of Separation}}_{\text{Cost}}
 \qquad (5.3)
 $$
-
 For high-intangible, low-leverage firms, the cost of pooling dominates.
 
 # 6. Empirical Implications
@@ -520,12 +511,10 @@ The model generates cross-sectional predictions based on the firm's capital stru
 
 **Hypothesis 1 (The Leverage-Intangibility Interaction)**
 The likelihood of Non-GAAP disclosure is negatively associated with leverage $D_0$ (due to the real debt cost $\Delta r_L$). However, this relationship is attenuated by intangible intensity:
-
 $$
 \frac{\partial D^*}{\partial (\Sigma_{ND} - \Sigma_D)} > 0
 \qquad (6.1)
 $$
-
 High-intangible firms can sustain dual reporting at higher leverage levels because the equity liquidity benefit subsidizes the debt cost.
 
 ## 6.2. The Nature of the Signal
@@ -542,10 +531,8 @@ The Earnings Response Coefficient (ERC) for Non-GAAP news is conditional on leve
 
 **Hypothesis 4 (The Spreads Hypothesis)**
 Controlling for fundamental risk, Non-GAAP disclosers exhibit **wider credit spreads** than non-disclosers:
-
 $$
 \Delta r_L = r_L(\mathcal{A}^*) - r_L(0) > 0
 \qquad (6.2)
 $$
-
 Disclosure reveals tail risk (volatility), which rational creditors price into the yield.
