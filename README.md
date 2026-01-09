@@ -360,6 +360,12 @@ $$
 \phi_2 - \psi_P (\mathcal{A}^* - \hat{g}_M) = 0\qquad (4.7)
 $$
 
+(FOC displayed in two lines because one-line version does not render correctly in github)
+$$
+\phi_1 (1 - r_L'(\mathcal{A}^*) D_0) + \phi_2 - \psi_P (\mathcal{A}^* - \hat{g}_M) = 0
+\qquad (4.7)
+$$
+
 The term $r_L'(\mathcal{A}^*) D_0$ represents the **marginal real cost** of reporting—as the manager inflates the signal, the yield on debt rises, transferring value from equity to debt.
 
 ### Equilibrium Characterization
