@@ -4,7 +4,7 @@ This [Online Appendix](https://github.com/rngpaper/onlineappendix) provides a co
 
 ## Formal Verification
 
-The mathematical results in this paper have been formally verified using the [Lean 4](https://leanprover.github.io/) proof assistant. Complete formal proofs are available in the `RNG_Lean4_Proof/` directory:
+The mathematical results in this [paper](https://github.com/rngpaper/onlineappendix/blob/main/paper_20260108.pdf) have been formally verified using the [Lean 4](https://leanprover.github.io/) proof assistant. Complete formal proofs are available in the `RNG_Lean4_Proof/` directory:
 
 - **Section 3**: [`RNG_Section3_v1.lean`](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/RNG_Section3_v1.lean) — GAAP and Non-GAAP Earnings (Propositions 1-2, Lemmas 3.1-3.2, Corollaries 1 and B.1)
 - **Section 4**: [`RNG_Section4_v1.lean`](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/RNG_Section4_v1.lean) — Market Equilibrium with Debt Financing (Propositions 3-5, Lemmas 4.1-4.2, Corollaries 3-4)
