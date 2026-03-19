@@ -1,16 +1,26 @@
-## HOWTO RUN THE PROOF WITH LEAN4
+# Lean 4 Formal Proofs
 
-### 1. Clone the GitHub Repo
+## File Guide
+
+| File                    | Status                              | Description                                                  |
+| ----------------------- | ----------------------------------- | ------------------------------------------------------------ |
+| **`RNG_20260220.lean`** | Canonical (zero sorry, zero errors) | All propositions including hump-shaped equilibrium credibility, GMR boundary, conservatism complementarity, welfare results |
+| `RNG_Section3_v1.lean`  | Superseded                          | Section 3: GAAP and Non-GAAP Earnings                        |
+| `RNG_Section4_v1.lean`  | Superseded                          | Section 4: Market Equilibrium with Debt Financing            |
+| `RNG_Section5_v1.lean`  | Superseded                          | Section 5: Policy and Standard Setting                       |
+
+The canonical file `RNG_20260220.lean` contains 30 explicit axioms (14 standard normal properties, 9 mechanical calculus, 6 structural/equilibrium, 1 residual low-noise regime). All other results are derived as theorems.
+
+## How to Run
+
+### 1. Clone the repo
+
 ```bash
 git clone https://github.com/rngpaper/onlineappendix.git
-
 cd onlineappendix
 ```
 
 ### 2. Initialize Lake
-Initialize the Lake project directly in the current directory. This sets up the Lean 4 environment and Mathlib.
-
-Run the following commands in the root of your repository (`onlineappendix` folder):
 
 ```bash
 # Initialize the project with mathlib
@@ -22,28 +32,19 @@ lake update
 # Download pre-built mathlib binaries (saves hours of compiling)
 lake exe cache get
 ```
-*   `init`: Sets up Lake in the current directory.
-*   `math`: Uses the Mathlib template (required for proofs relying on Mathlib).
 
+### 3. Check the canonical proof
 
-### 3. Run the Proofs
-You can now check the proofs individually:
+```bash
+lake lean RNG_Lean4_Proof/RNG_20260220.lean
+```
 
-**Section 3:**
+A successful run produces no errors and no `sorry` warnings.
+
+### 4. Check the older section files (optional)
+
 ```bash
 lake lean RNG_Lean4_Proof/RNG_Section3_v1.lean
-```
-
-
-**Section 4:**
-```bash
 lake lean RNG_Lean4_Proof/RNG_Section4_v1.lean
-```
-
-**Section 5:**
-```bash
 lake lean RNG_Lean4_Proof/RNG_Section5_v1.lean
 ```
-
-### 4. Output
-The output will look like [this](https://github.com/rngpaper/onlineappendix/blob/main/RNG_Lean4_Proof/terminal_output.pdf)
